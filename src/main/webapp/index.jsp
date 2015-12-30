@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="/Air/css/import.css" />
-<!-- <script src="/Air/js/jquery-1.11.2.min.js"></script> -->
+<script src="/Air/js/jquery-1.11.2.min.js"></script>
 <script src="/Air/js/TweenMax.min.js"></script>
 <script src="/Air/js/common.libs.js"></script>
 <script src="/Air/js/jquery.ListBox.js"></script>

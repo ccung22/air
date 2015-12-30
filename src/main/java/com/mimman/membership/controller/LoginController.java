@@ -14,6 +14,7 @@ import com.mimman.membership.service.MemberService;
 public class LoginController {
 	private MemberService memberService;
 	
+	//인스턴스 생성
 	public void setMemberService(MemberService memberService) {
 		this.memberService = memberService;
 	}
