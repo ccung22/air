@@ -7,7 +7,7 @@
 <div class="wrapG_all">
    <div class="wrapG">
    <!-- gnb -->
- <jsp:include page="/inc/gnb.jsp" flush="true" /> 
+ <jsp:include page="/inc/gnb.jsp" flush="true" />
    <!-- //gnb -->
 
       <hr />
@@ -37,14 +37,13 @@
             <div class="tab_con_wrap">
             
             <div class="tab_con">
-               <form name="form3" method="POST" target="sysfrm">
-               <input type="hidden" name="mode" value="sms_authno" />
+               <form name="form1" method="POST" action="pwSearch.action">
                <div class="sch_box">
                   <ul class="sch_id">
                      <li>
                         <strong>아이디</strong>
                         <div class="item1">
-                           <input type="text" name="login_id" class="i_text2" />
+                           <input type="text" name="user_id" class="i_text2" />
                         </div>
                      </li>
                      <li>
@@ -53,8 +52,8 @@
                            <input type="text" name="user_nm" class="i_text2" />
                         </div>
                      </li>
-                     <li>
-                        <strong>휴대전화</strong>
+                     <!--<li>
+                         <strong>휴대전화</strong>
                         <div class="item1">
                            <select name="mobile1">
                               <option value="010">010</option>
@@ -68,32 +67,21 @@
                            <input type="text" name="mobile3" class="i_text2" maxlength="4" style="width:70px;" />
                            <input type="button" class="btn_m" value="찾기" onclick="sendSmsAuthNo()" />
                         </div>
-                     </li>
+                     </li> -->
+                     
+                     <li>
+	                  <strong>이메일</strong>
+	                  <div class="item1">
+	                     <input type="text" name="email1" class="i_text2" style="width:190px;" /> 
+	                     <input type="submit" class="btn_m" value="찾기" />
+	                  </div>
+	               </li>
                   </ul>
-                  <p>* 회원가입시 작성하였던 아이디, 성명, 휴대폰번호를 입력하여 주세요.</p>
+                  <p>* 회원가입시 작성하였던 아이디, 성명, 이메일을 입력하여 주세요.</p>
                   
                </div>
                </form>
             </div>
-            <script>
-            function sendSmsAuthNo() {
-               var f = document.forms['form3'];
-               f['mode'].value = "sms_authno";
-               f['auth_no'].removeAttribute("REQUIRED");
-               if(!validate(f)) return;
-               f.submit();
-               f['mode'].value = "";
-            }
-            function sendSmsNewPasswd() {
-               var f = document.forms['form3'];
-               f['mode'].value = "sms_passwd";
-               f['auth_no'].setAttribute("REQUIRED", "Y");
-               if(!validate(f)) return;
-               f.submit();
-               f['mode'].value = "";
-            }
-            </script>
-                  
             
                </div>
             </div>

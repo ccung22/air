@@ -98,7 +98,7 @@ function emailCheck(){
       </div>
       <!-- //tab_w -->
 
-      <h3 class="blind">시설현황</h3>
+      <h3 class="blind">회원가입</h3>
 
       <!-- 본문영역 -->
       <div id="contentG">

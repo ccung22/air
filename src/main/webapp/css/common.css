@@ -19,7 +19,6 @@
 	url('webfont/NanumGothic-Bold.ttf') format('truetype');
 }
 
-
 /* Common */
 html{overflow-y:scroll}
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0;font-weight:normal;}
@@ -145,21 +144,4 @@ div.joinagree input.i_text{display:inline-block;position:relative;width:30px;hei
 
 
 .btn_m{border:1px solid #ddd;background:#4C4C4C !important;color:#fff;border-radius:5px;height:30px;padding:0px 20px;line-height:28px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

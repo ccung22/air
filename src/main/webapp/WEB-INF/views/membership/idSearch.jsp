@@ -33,8 +33,7 @@
          <div id="contentG_w">
 
             <!-- 내용 -->
-         <form name="form1" method="POST" target="sysfrm">
-         <input type="hidden" name="mode" value="find_id" />
+         <form name="form1" method="POST" action="idSearch.action">
          <div class="sch_box">
             <ul class="sch_id">
                <li>
@@ -46,8 +45,8 @@
                <li>
                   <strong>이메일</strong>
                   <div class="item1">
-                     <input type="text" name="email1" class="i_text2" style="width:90px;" /> @ <input type="text" name="email2" class="i_text2" /> 
-                     <input type="button" class="btn_m" onclick="goFindId()" value="찾기" />
+                     <input type="text" name="email1" class="i_text2" style="width:190px;" /> 
+                     <input type="submit" class="btn_m" value="찾기" />
                   </div>
                </li>
             </ul>

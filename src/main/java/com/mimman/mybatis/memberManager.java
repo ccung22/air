@@ -10,7 +10,9 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import com.mimman.membership.repository.Login;
 import com.mimman.membership.repository.Member;
+import com.mimman.membership.repository.Search;
 import com.mimman.membership.repository.Update;
+import com.mimman.membership.repository.pwSearch;
 
 public class memberManager {
 	private static SqlSessionFactory sqlFactory;
@@ -63,4 +65,20 @@ public class memberManager {
 		session.delete("drop",id);
 		session.commit();
 	}
+	
+	public static String idSearch(Search search){
+		SqlSession session = sqlFactory.openSession();
+		String dto = null;
+		dto = session.selectOne("idSearch", search);
+		return dto;
+	}
+
+	public static String pwSearch(pwSearch search) {
+		SqlSession session = sqlFactory.openSession();
+		String dto = null;
+		dto = session.selectOne("pwSearch", search);
+		System.out.println(dto);
+		return dto;
+	}
+	
 }
